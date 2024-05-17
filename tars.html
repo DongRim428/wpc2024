@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog page </title>
 
-    <link type="text/css" rel="stylesheet" href="mycss.css">
+<style>
+
+    div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation: 2s myanim;
+        animation-iteration-count: 10;
+    }
+    
+    @keyframes myanim {
+        0% {background-color: red; left: 0px; top: 0px;}
+        25% {background-color: red; left: 100px; top: 0px;}
+        50% {background-color: yellow; left: 200px; top: 0px;}
+        75% {background-color: blue; left: 100px; top: 0px;}
+        100% {background-color: blue; left: 0px; top: 0px;}
+    }
+
+</style>
+
 </head>
+
+<link type="text/css" rel="stylesheet" href="mycss.css">
+
+
+
+
+
 <body>
+    <!-- .css 파일로 다 묶을수 있음 공간절약 수정할떄 css파일만 수정하면됨-->
     <!-- z-index는 레이어 위치 조정하는거임 -1~1 -->
     <header>
     <h1> My Blog Page </h1>
@@ -28,17 +56,13 @@
     
     </nav>
 <section id="main">
-<article>
 
-<h1> 강아지의 예방접종 </h1>
+<div></div>
 
-<img class="a" src="dogh.jpg" width="90" height="90" />
 
-<p> 강아지는 어린 시절 면역력이 약하므로 예방 접종을 시켜주는 경우가 많다. 
-    사실 어린 시절 어미 젖을 먹고 자라면 예방 접종을 굳이 하지 않아도 면역력이 형성된다고 한다.
-     하지만 한국에서는 대부분 1.5개월령의 어린 나이에 어미개로부터 떨어져 자라게 되므로 항체가 
-     제대로 형성되지 못하는 경우가 많은 것이다.  </p>
-    </article>
 </section>
 
 <footer> copyright  </footer>
+
+</body>
+</html>
