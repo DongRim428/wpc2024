@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donation</title>
+    <style>
+
+
+body {
+    width: 100%;
+    height: auto;
+    background-image: url(donationimg.html.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#list fieldset {
+    
+    border: 2px solid orange;
+    background-color: white;
+    width: 30%;
+    height: auto;
+}
+
+input[type=submit] {
+
+
+margin: 0 auto;
+background-color: orange;
+border: none;
+color: white;
+padding: 16px 50px;
+font-weight: bold;
+}
+
+#list {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+
+#header {
+    width: 100%;
+    height: auto;}
+    
+    #footer  {
+        
+    padding: 12px;
+    clear: both;
+    background-color: rgb(136, 163, 110);
+    text-align: center;
+    width: 100%;
+  height: auto;
+  clear: both;
+  color: white;
+  }
+
+
+
+ @media screen and(max-width:1000px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+    #header {
+        width: 100%;
+        height: auto;
+    }
+    #list {
+        width: 100%;
+        height: auto;
+    }
+ }
+
+
+ @media screen and(max-width:500px) {
+body {
+    width: 100%;
+    height: auto;
+}
+
+    #list {
+        width: 100%;
+        height: auto;
+    }
+    #header {
+        width: 100%;
+        height: auto;
+    }
+ }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="header"> 
+        <a href="index.html">
+<img src="logo.png">
+</a>
+    </div>
+<br>
+    <div id="list">
+       <form >
+<fieldset>
+<br>
+ <h3>후원 종류</h3> <br><br> 
+
+
+<strong>모금상품</strong>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input list="donation" name="donation">
+
+<datalist id="donation">
+  <option value="후원금"></option>  <option value="물건 기부"></option> <br>
+</datalist>
+<br><br><br>
+<label class><strong>후원주기</strong></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+정기 후원 <input type="radio" name="donationkind" value="long">&nbsp;&nbsp;&nbsp; 
+일시 후원 <input type="radio" name="donationkind" value="short">
+<br><br><br>
+<label class><strong>후원금액</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+10,000원 <input type="radio" name="moneykind" value="money">&nbsp;&nbsp;&nbsp;
+30,000원 <input type="radio" name="moneykind" value="money">&nbsp;&nbsp;&nbsp;
+50,000원 <input type="radio" name="moneykind" value="money">&nbsp;&nbsp;&nbsp;
+100,000원 <input type="radio" name="moneykind" value="money">&nbsp;&nbsp;&nbsp; <br> <br><br>
+<hr>
+<br> <br>
+<h3>회원가입 정보</h3> 
+<sub>후원내역 확인 등 마이페이지 이용 시 꼭 필요한 정보입니다.</sub> <br><br><br>
+<label class><strong>후원주기</strong></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+개인 <input type="radio" name="kind" value="person">&nbsp;&nbsp;&nbsp; 
+단체(사업자) <input type="radio" name="kind" value="group"><br><br><br>
+<label class><strong>이름</strong></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label for="name"></label>
+<input type="text" name="name"><br><br><br>
+<label class><strong>휴대전화</strong></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label for="number"></label>
+<input type="text" name="number"><br><br><br>
+<label class><strong>이메일</strong></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label for="email"></label>
+<input type="text" name="email"><br><br><br>
+<hr>
+<br><br>
+<h3>가입 경로 및 이유</h3> 
+<br><br>
+<textarea name="join" rows="3" cols="50"></textarea>
+<br><br>
+<hr>
+<br><br>
+
+<h3>결제 정보</h3>
+<br><br> 
+<label class><strong>결제수단</strong></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+자동이체 <input type="radio" name="donationkind" value="long">&nbsp;&nbsp;&nbsp; 
+신용카드 <input type="radio" name="donationkind" value="short">
+<br><br><br>
+<strong>은행명</strong>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input list="bank" name="bank">
+<datalist id="bank">
+  <option value="국민은행"></option>  <option value="부산은행"></option><option value="신한은행"></option>  <option value="농협은행"></option> <br>
+</datalist>
+<br><br><br>
+<label class><strong>계좌번호</strong></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label for="accout"></label>
+<input type="text" name="accout"><br><br><br>
+<label class><strong>예금주명</strong></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label for="accout admin"></label>
+<input type="text" name="accout admin"><br><br><br>
+<label class><strong>예금주구분</strong></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+개인 <input type="radio" name="donationkind" value="long">&nbsp;&nbsp;&nbsp; 
+사업자 <input type="radio" name="donationkind" value="short"><br><br><br>
+<label class><strong>생년월일</strong></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label for="born"></label>
+<input type="text" name="born"><br><br><br>
+<strong>출금일</strong>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input list="date" name="date">
+<datalist id="date">
+  <option value="매월 1일"></option>  <option value="매월 15일">
+</datalist><br><br><br>
+<hr><br><br>
+<input type="radio" name="donationkind" value="long">  <strong>전체 동의하기</strong>
+<br><br>
+ <input type="radio" name="donationkind" value="long"> [필수] 이용약관 동의<br>
+ <input type="radio" name="donationkind" value="long"> [필수] 개인정보처리방침 동의<br><br><br><br>
+ 
+
+
+<input type="submit" value="후원하기" oneclick="alert('후원 감사드립니다.')" >
+
+</fieldset>
+
+
+       </form>
+    </div><br><br><br> 
+    <div id="footer">
+        <strong>후원계좌 농협 352-9030-7735-03 사단법인 애니멀라이프</strong><br>
+        <sub>단체명(사)애니멀라이프 고유번호 341-41-00231 대표자 강동림</sub><br>
+        <sub>[45413]부산광역시 연제구 거제대로 131번길 42, 2층 대표전화 051-313-6445 팩스 051-541-6531</sub>
+        <sub>이메일 ejdqwd@gmail.com</sub><br>
+       <sub> COPYRIGHT (C) LIFE. ALL RIGHTS RESERVED.</sub>
+        </div>
+
+</body>
+</html>

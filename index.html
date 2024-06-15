@@ -3,66 +3,657 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog page </title>
-    <style>
-        @media screen and  (max-width: 500px) {
-            header {width: 100%;}
-            nav { width: 100%;}
-            figure {width: 100% }
-            section { width: 100%;}
-            footer { width: 100%;}
-            #main { width: 100%;}
-            article { width: 100%;}
-        }
-    </style>
+    <title>Home</title>
+
+    <link href="header,section1.css" rel="stylesheet">
+<style>
+
+@media screen and (max-width: 5000px) {
+
+#header .list1 li {
+  font-size:large;
+  
+}
+
+
+#section2 {
+  background: url(section2back.jpg) no-repeat  center center;
+    width: 100%;
+    height: 60%;
+    padding: 5px;
+    text-align:center;
+    margin: auto;
+  }
+
+  #section2 .videologo {
+    width: 20%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    
+  } 
+
+.container {
+  
+  width: 80%;
+    height: 70%;
+  margin: auto;
+  display: grid;
+  height: 550px;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr ;
+ 
+ padding: 5px;
+}
+.container img {
+  width: 80%;
+  height: auto;
+}
+
+#section3 {
+  width: 100%;
+    height: 60%;
+    padding: 5px;
+    text-align:center;
+    margin: auto;
+}
+
+#section3 .videologo {
+    width: 20%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    
+  }
+
+#section4 {
+  background: url(section2back.jpg) no-repeat  center center;
+  width: 100%;
+    height: 60%;
+    padding: 5px;
+    text-align:center;
+    margin: auto;
+}
+
+#section4 .videologo {
+    width: 20%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    
+  }
+
+  #done img {
+    width: 100%;
+    height: auto;
+  }
+
+.video1 {
+  margin: auto;
+  
+}
+.video2 {margin: auto;}
+.video3 {margin: auto;}
+.video4 {margin: auto;}
+.video5 {margin: auto;}
+.video6 {margin: auto;}
+
+
+
+#footer {
+  width: 100%;
+  height: auto;
+  clear: both;
+  color: white;
+}
+
+#news {
+  margin: auto;
+  width: 100%;
+  height: 60%;
+  height: 700px;
+}
+
+#news  .news1, .news2, .news3 {
+  padding: 15px;
+}
+#news .news1 img {
+   padding-right: 20px;
+   padding-bottom: 5px;
+  float: left;
+}
+
+#news .news2 img {
+  float: left;
+  padding-right: 20px;
+
+}
+
+#news .news3 img {
+  float: left;
+  padding-right: 20px;
+}
+
+
+
+}
+
+@media screen and (max-width: 1000px) {
+  #header {
+    width: 100%;
+    height: 230px;
+  }
+  
+  #header img {
+    position: relative;
+    
+    width: 30%;
+    
+  }
+  #header .list1 {
+    position:relative;
+    top: 170px;
+  }
+  #header .list1 li {
+    font-size: medium;
+  }
+  
+  #news .news1 img {
+   padding-right: 20px;
+   padding-bottom: 5px;
+  float: left;
+  width: 20%;
+  height: auto;
+}
+#news .news1 h3 {
+  font-size: medium;
+}
+#news .news1 p {
+  font-size: medium;
+}
+
+
+#news .news2 img {
+  float: left;
+  padding-right: 20px;
+  width: 20%;
+  height: auto;
+
+}
+
+#news .news2 h3 {
+  font-size: medium;
+}
+#news .news2 p {
+  font-size: medium;
+}
+
+
+#news .news3 img {
+  float: left;
+  padding-right: 20px;
+  width: 20%;
+  height: auto;
+}
+
+#news .news3 h3 {
+  font-size: medium;
+}
+#news .news3 p {
+  font-size: medium;
+}
+
+#news  {
+  height: 800px;
+}
+
+
+#news #newslogo img {
+  position: relative;
+  top: 5px;
+  left: 150px;
+  margin: auto;
+  text-align: center;
+  
+
+  width: 50%;
+}
+
+
+#done {
+  width: 100%;
+  height: auto;
+}
+
+#news .news3 p {
+  width: 100%;
+  height:auto;
+}
+#done img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 9px;
+}
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  
+
+  
+  #header {
+    width: 100%;
+    height: 230px;
+  }
+  
+  #header img {
+    position: relative;
+    right: 20px;
+    height: auto;
+    width: 60%;
+    
+  }
+
+#header .list1 {
+    position:relative;
+    top: 180px;
+    right: 20px;
+    
+  }
+
+#header .list1 li {
+  text-align: center;
+  margin: auto;
+  font-size:small;
+  padding: 4px;
+}
+
+#section img {
+  width: 100%;
+}
+#section2 {width: 100%;}
+#section2 .videologo {width: 40%; top: auto;}
+
+#section2 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  'video1''video2'
+  'video3''video4'
+  'video5''video6';
+  height: 300px;
+  padding: 3px;
+}
+
+#section img {
+  width: 100%;
+}
+#section3 {width: 100%;}
+#section3 .videologo {width: 40%; top: auto;}
+
+#section3 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  'video1''video2'
+  'video3''video4'
+  'video5''video6';
+  height: 300px;
+  padding: 3px;
+}
+
+#section img {
+  width: 100%;
+}
+#section4 {width: 100%;}
+#section4 .videologo {width: 40%; top: auto;}
+
+#section4 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  'video1''video2'
+  'video3''video4'
+  'video5''video6';
+  height: 300px;
+  padding: 3px;
+}
+#news {
+  width: 100%;
+  height: 750px;
+}
+
+#news .news1 img {
+   padding-right: 20px;
+   padding-bottom: 5px;
+  float: left;
+  width: 25%;
+  height: auto;
+}
+
+#news .news2 img {
+  float: left;
+  padding-right: 20px;
+  width: 25%;
+  height: auto;
+}
+
+#news .news3 img {
+  float: left;
+  padding-right: 20px;
+  width: 25%;
+  height: auto;
+}
+#news #newslogo img {
+  position: relative;
+  top: 5px;
+  left: 100px;
+  margin: auto;
+  text-align: center;
+  
+
+  width: 50%;
+}
+#news .news1 p {
+  font-size: small;
+}
+#news .news1 h3 {
+ 
+  font-size: small;
+
+}
+
+#news .news2 p {
+  font-size: small;
+}
+#news .news2 h3 {
+ 
+  font-size: small;
+
+}
+
+#news .news3 p {
+  font-size: small;
+}
+#news .news3 h3 {
+ 
+  font-size: small;
+
+}
+
+#news .news3  {
+  width: 100%;
+  height:auto;
+}
+
+#done img {
+  padding-top: 5px;
+  position: relative;
+  top: 5px;
+  left: 0px;
+  width: 110%;
+ height: 100%;
+ 
+}
+
+}
+  
+
+
+
+
+</style>
+
+
+
+
 </head>
 
-<link type="text/css" rel="stylesheet" href="mycss.css">
-
-
-
-
-
-
 <body>
-    <!-- .css 파일로 다 묶을수 있음 공간절약 수정할떄 css파일만 수정하면됨-->
-    <!-- z-index는 레이어 위치 조정하는거임 -1~1 -->
-    <header>
-    <h1> My Blog Page </h1>
-</header>
-    <nav> 
-        <h1> 사이트 주소 </h1>
-        <ul>
-            <li><a href="index.html"> 반려동물의 소개 </a>  </li>
-            <li><a href="hos.html"> 강아지의 예방접종 </a>  </li>
-            <li><a href="food.html"> 강아지에게 좋은 음식 </a>  </li>
-            <li> <a href="tars.html"> 애니메이션 </a> </li>
-            <li> <a href="myani.html"> 토끼와 거북이</a>   </li>
-        </ul>
-        <figure>
-            <img width="90" height="60" src="dog3.jpg" alt="불러오는중"/>
-            
-        </figure>
     
-    </nav>
-<section id="main">
 
-<article>
-<h1> 반려동물의 정의</h1>
-<p> 사람이 정서적으로 의지하기 위해 집에서 기르는 동물을 뜻하는 용어이다.
-     동물이 장난감 같은 존재가 아니라 사람과 
-    더불어 살아가는 반려자라는 인식이 확산되면서 반려동물이라고 주로 불리고 있다.</p>
+ 
 
-</article>
-<article>
-    <h1> 반려동물의 종류</h1>
-    <p> 반려동물에는 개, 고양이, 햄스터 등의 포유류와 앵무새,
-         카나리아 등의 조류, 금붕어, 열대어 등의 어류, 이구아나, 카멜레온 등의 파충류 등이 있다.</p>
-</article>
 
-</section>
+<div id="header">
 
-<footer> copyright  </footer>
+  <ul class="list1" >
+    <li>
+    <a href="sub.html" > 단체소개 </a>
+    </li>
+    <li>
+        <a href="sub.html" > 주요활동 </a>
+    
+    </li>
+    <li>
+        <a href="sub.html" > 공지언론 </a>  
+        </li>
+        <li >
+        <a href="sub.html" > 후원하기 </a>
+    </li>
+    
+        </ul>
+
+<a href="#">
+  <img  src="logo.png" width="200px">
+</a>
+ 
+
+</div>
+
+
+
+
+<div id="section">
+<img src="dog4.png">
+
+
+</div>
+
+<div id="section2">
+  <a href="https://www.youtube.com/@user-us8mm5td5s" target="_blank">
+  <img class="videologo" src="life tv logo.png" width="200" height="50" >
+</a>
+<div class="container">
+<div class="video1">
+<a href="https://www.youtube.com/watch?v=NpO45y7jktY" target="_blank">
+  <img src="video1.png"  width="300px" height="170px" >
+  
+</a>
+</div>
+<div class="video2">
+  <a href="https://www.youtube.com/watch?v=Oovd8ClxcEQ"target="_blank">
+    <img src="video2.png" width="300px" height="170px">
+  </a>
+</div>
+<div class="video3">
+  <a href="https://www.youtube.com/watch?v=vzpRxDXjMpA"target="_blank">
+  <img src="video3.png" width="300px" height="170px">
+</a>
+</div>
+<div class="video4">
+  <a href="https://www.youtube.com/watch?v=HIPIbKcqMew"target="_blank">
+    <img src="video4.png" width="300px" height="170px">
+  </a>
+</div>
+<div class="video5">
+  <a href="https://www.youtube.com/watch?v=gx2zs5D5QPY"target="_blank">
+    <img src="video5.png" width="300px" height="170px">
+  </a>
+</div>
+<div class="video6">
+  <a href="https://www.youtube.com/watch?v=-qLiQWf7cRI&t=1s"target="_blank">
+    <img src="video6.png" width="300px" height="170px">
+  </a>
+</div>
+
+</div>
+</div>
+<hr>
+
+<div id="section3">
+  <a href="https://www.youtube.com/@SBSANIMAL" target="_blank">
+  <img class="videologo" src="animallogo.png" width="200" height="50" >
+</a>
+<div class="container">
+<div class="video1">
+<a href="https://www.youtube.com/watch?v=XMx3pjykGbU" target="_blank">
+  <img src="video1-1.png"  width="300px" height="170px" >
+</a>
+</div>
+<div class="video2">
+  <a href="https://www.youtube.com/watch?v=X4Te2l4GI1s"target="_blank">
+    <img src="video1-2.png" width="300px" height="170px">
+  </a>
+</div>
+<div class="video3">
+  <a href="https://www.youtube.com/watch?v=jLCmNk8sWBY"target="_blank">
+  <img src="video1-3.png" width="300px" height="170px">
+</a>
+</div>
+<div class="video4">
+  <a href="https://www.youtube.com/watch?v=APCa_O55TTE"target="_blank">
+    <img src="video1-4.png" width="300px" height="170px">
+  </a>
+</div>
+<div class="video5">
+  <a href="https://www.youtube.com/watch?v=BeGBJK6lDTI"target="_blank">
+    <img src="video1-5.png" width="300px" height="170px">
+  </a>
+</div>
+<div class="video6">
+  <a href="https://www.youtube.com/watch?v=exRd_2PmTCw"target="_blank">
+    <img src="video1-6.png" width="300px" height="170px">
+  </a>
+</div>
+
+</div>
+</div>
+
+<div id="section4">
+  <a href="https://www.youtube.com/@writer_kimhy" target="_blank">
+  <img class="videologo" src="3677logo.png" width="200" height="50" >
+</a>
+<div class="container">
+<div class="video1">
+<a href="https://www.youtube.com/watch?v=GnWuYY2l1lE&list=PLCJJhebmZV1oqNxe6IbPoM4_9ECv91blf" target="_blank">
+  <img src="video2-1.png"  width="300px" height="170px" >
+  
+</a>
+</div>
+<div class="video2">
+  <a href="https://www.youtube.com/watch?v=9XGVaqmPztA&list=PLCJJhebmZV1oqNxe6IbPoM4_9ECv91blf"target="_blank">
+    <img src="video2-2.png" width="300px" height="170px">
+  </a>
+</div>
+<div class="video3">
+  <a href="https://www.youtube.com/watch?v=4IeWSgtr2Fo&list=PLCJJhebmZV1oqNxe6IbPoM4_9ECv91blf"target="_blank">
+  <img src="video2-3.png" width="300px" height="170px">
+</a>
+</div>
+<div class="video4">
+  <a href="https://www.youtube.com/watch?v=LIjKycmDwTI&list=PLCJJhebmZV1oqNxe6IbPoM4_9ECv91blf"target="_blank">
+    <img src="video2-4.png" width="300px" height="170px">
+  </a>
+</div>
+<div class="video5">
+  <a href="https://www.youtube.com/watch?v=3fKcWZfZrxQ"target="_blank">
+    <img src="video2-5.png" width="300px" height="170px">
+  </a>
+</div>
+<div class="video6">
+  <a href="https://www.youtube.com/watch?v=SQ1_HdSaEFY"target="_blank">
+    <img src="video2-6.png" width="300px" height="170px">
+  </a>
+</div>
+
+</div>
+</div>
+
+
+<div id="news">
+<div id="newslogo">
+<a href="#">
+  <img src="lifenews.png" width="20%" height="10%">
+</a>
+</div>
+  <hr >
+ 
+  <div class="news1">
+    <img src="new1.jpg" width="15%" height="10%">  
+   <h3>[활동 보고] 구내염 고양이 구조 소식</h3>
+   <p>
+    지난주 애니멀 라이프는 노포동에서 구내염 고양이 사랑이를 구조했습니다. 사랑이는 제보자의 손길로 삼 년간 보살핌을 받았던 길냥이 입니다. 
+    <br>
+    예전 부터 입이 불편한 사랑이를 위해 늘 습식 사료를 준비하던 제보자는 어느 날 사랑이의 상태가 급격히 안 좋아지는 것을 발견했습니다. 
+    <br>
+    현장에서 찍은 첫번째 사진입니다.
+   </p>
+  </div>
+  <br>
+  <hr>
+ 
+  <div class="news2">
+    <img src="new2.jpg" width="15%" height="10%">
+    <h3>[활동 보고] 대신동 길냥이 "지나" 구조 소식</h3>
+    <p>
+      라이프는 8월3일, 부산 대신동으로 구조를 나가게 되었습니다. 제보자는 지난 3년간 공원 옆에서 지내는 길냥이 "지나"를 돌보는 사람이었습니다.
+      <br>
+      항상 삶은 꽁치를 밥으로 주던 제보자는 어느 날 "지나"의 입이 불편한 것을 보고 치료를 결심했습니다. 하지만 재빠른 고양이의 특성상,
+      <br>
+      포획이 쉽지 않았지만 애니멀 라이프로 구조 요청을 하여 포획에 성공하였습니다.
+    </p>
+
+  </div>
+  <br>
+  <hr>
+  <div class="news3">
+    <img src="new3.jpg" width="15%" height="10%">
+    <h3>[활동 보고] 라이프 사무실 앞 강아지 두마리 "복순이,동글이" 치료&TNR 활동</h3>
+    <p>
+      라이프 사무실 앞에 강아지 급식소에는 "복순이,동글이"라는 이름의 강아지가 두마리있습니다. 복순이는 구내염을 앓으며 피가 섞인 침을 흘리곤 했는데요
+      <br>
+  ,마침 어느 날 사무실 앞에 밥을 먹으러 온 "복순이,동글이"를 발견하고는 포획에 나섰습니다. 병원으로 이동한 "앞머리"는 구내염 치료와 함께
+  <br> TNR수술을 받았습니다. 다행히 "복순이"의 건강은 양호하여 다행이였습니다.
+    </p>
+
+
+  </div>
+  
+   
+
+
+  </div>
+
+
+<br> <br><br>
+
+
+
+
+
+<div id="done">
+  <a href="donation.html">
+  <img src="done.png">
+</a>
+</div>
+
+
+
+<div id="footer">
+  <strong>후원계좌 농협 352-9030-7735-03 사단법인 애니멀라이프</strong><br>
+  <sub>단체명(사)애니멀라이프 고유번호 341-41-00231 대표자 강동림</sub><br>
+  <sub>[45413]부산광역시 연제구 거제대로 131번길 42, 2층 대표전화 051-313-6445 팩스 051-541-6531</sub>
+  <sub>이메일 ejdqwd@gmail.com</sub><br>
+ <sub> COPYRIGHT (C) LIFE. ALL RIGHTS RESERVED.</sub>
+  </div>
+
 
 </body>
 </html>
