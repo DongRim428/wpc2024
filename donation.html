@@ -51,14 +51,17 @@ font-weight: bold;
     height: auto;}
     
     #footer  {
-        
+        position: relative;
+        left: 0px;
+        right: 30px;
+        margin: auto;
     padding: 12px;
     clear: both;
     background-color: rgb(136, 163, 110);
     text-align: center;
     width: 100%;
   height: auto;
-  clear: both;
+  
   color: white;
   }
 
@@ -77,24 +80,44 @@ font-weight: bold;
         width: 100%;
         height: auto;
     }
- }
 
-
- @media screen and(max-width:500px) {
-body {
-    width: 100%;
-    height: auto;
-}
-
-    #list {
+    #footer{
         width: 100%;
         height: auto;
     }
+
+    #list fieldset {
+    
+    border: 2px solid rgb(99, 170, 170);
+    background-color: white;
+    width: 30%;
+    height: auto;
+}
+ }
+
+@media screen and(max-width:490px) {
     #header {
         width: 100%;
         height: auto;
     }
- }
+    #list {
+        width: 100%;
+        height: auto;
+    
+    }
+    #footer {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 100px;
+    }
+
+       
+}
+
+
+
 
 
 
@@ -113,7 +136,7 @@ body {
     </div>
 <br>
     <div id="list">
-       <form >
+       
 <fieldset>
 <br>
  <h3>후원 종류</h3> <br><br> 
@@ -204,13 +227,7 @@ body {
 
        </form>
     </div><br><br><br> 
-    <div id="footer">
-        <strong>후원계좌 농협 352-9030-7735-03 사단법인 애니멀라이프</strong><br>
-        <sub>단체명(사)애니멀라이프 고유번호 341-41-00231 대표자 강동림</sub><br>
-        <sub>[45413]부산광역시 연제구 거제대로 131번길 42, 2층 대표전화 051-313-6445 팩스 051-541-6531</sub>
-        <sub>이메일 ejdqwd@gmail.com</sub><br>
-       <sub> COPYRIGHT (C) LIFE. ALL RIGHTS RESERVED.</sub>
-        </div>
+    
 
 </body>
 </html>
